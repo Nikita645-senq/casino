@@ -1,0 +1,1022 @@
+.header {
+  background-color: #1a0740;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+}
+.header .header-container {
+  flex-basis: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-container .header-log {
+  width: 130px;
+  height: 65px;
+  cursor: pointer;
+}
+.header .header-container .header-buttons {
+  display: flex;
+  gap: 5px;
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+}
+.header .header-container .header-buttons a {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f9e045;
+  transition: 0.3s;
+  border-radius: 5px;
+  min-height: 30px;
+  min-width: 79px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .header-container .header-buttons a:hover {
+  background-color: inherit;
+  color: #f9e045;
+  transition: 0.3s;
+}
+
+.footer {
+  background-color: #1a0740;
+  min-height: 350px;
+  width: 100%;
+}
+.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.footer .footer-container .footer-logo {
+  padding-top: 10px;
+}
+.footer .footer-container .footer-logo .footer-log {
+  width: 170px;
+  height: 85px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-par {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer .footer-container .footer-par .footer-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer .footer-container .footer-par .footer-menu a {
+  cursor: pointer;
+  font-size: clamp(15px, 5vw, 24px);
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-par .footer-menu a:hover {
+  color: #f9e045;
+  transition: 0.3s;
+}
+.footer .footer-container .footer-par .footer-social-networks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-container .footer-par .footer-social-networks .footer-social-networks-container-logo {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-container .footer-par .footer-social-networks .footer-social-networks-container-logo img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.footer .footer-container .footer-par .footer-social-networks .mail {
+  color: #f9e045;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.footer .footer-container .footer-par .footer-social-networks .mail span {
+  color: white;
+}
+.footer .footer-copyright-info {
+  color: white;
+  padding-top: 30px;
+  border-top: #6c757d 2px solid;
+  font-size: clamp(12px, 3vw, 14px);
+  opacity: 90%;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 90px;
+  }
+  .header .header-container .header-buttons {
+    width: 30%;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .header .header-container .header-buttons a {
+    flex: 1;
+    min-height: 40px;
+  }
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter Tight", serif;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-187deg, #4b0082, #800080, #9400d3);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+}
+
+img {
+  display: block;
+}
+
+.color-set-name-casino {
+  color: #f9e045;
+}
+
+.wrapper {
+  width: 1200px;
+}
+
+.home-screen {
+  width: 100%;
+  background-image: url(/public/live-casino.7d5721f8_11zon.webp);
+  min-height: 635px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-top: 0px;
+}
+.home-screen .home-screen-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0.36);
+}
+.home-screen .home-screen-container .home-screen-content {
+  color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-screen .home-screen-container .home-screen-content .home-screen-title {
+  font-size: clamp(36px, 5vw, 46px);
+}
+.home-screen .home-screen-container .home-screen-content .home-screen-title span {
+  color: #f9e045;
+}
+.home-screen .home-screen-container .home-screen-content .home-screen-description {
+  font-size: clamp(16px, 5vw, 26px);
+  font-weight: 600;
+}
+.home-screen .home-screen-container .home-screen-content .home-screen-btn {
+  align-self: start;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: clamp(15px, 5vw, 24px);
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #f9e045;
+  padding: 10px;
+  border-radius: 10px;
+  color: #1a0740;
+  font-weight: 500;
+}
+.home-screen .home-screen-container .home-screen-content .home-screen-btn:hover {
+  color: #f9e045;
+  transition: 0.3s;
+  background-color: #1a0740;
+}
+
+.wrapper-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  background-color: #4a1a7b;
+  gap: 70px;
+}
+
+.AboutN8CasinoPlatform {
+  width: 80%;
+  background-color: #4a1a7b;
+}
+
+.AboutN8CasinoPlatform-container .about-title {
+  color: #f9e045;
+  font-size: clamp(24px, 5vw, 36px);
+}
+.AboutN8CasinoPlatform-container .about-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  opacity: 95%;
+}
+.AboutN8CasinoPlatform-container .about-text-container div {
+  font-size: clamp(16px, 5vw, 24px);
+}
+.AboutN8CasinoPlatform-container .about-text-container span {
+  color: #f9e045;
+}
+
+.PopularOnlineGames {
+  width: 80%;
+}
+.PopularOnlineGames .PopularOnlineGames-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.PopularOnlineGames-intro {
+  color: white;
+  opacity: 95%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.PopularOnlineGames-intro .PopularOnlineGames-intro-img {
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.PopularOnlineGames-intro .PopularOnlineGames-intro-img img {
+  width: 100%;
+  cursor: pointer;
+}
+.PopularOnlineGames-intro .PopularOnlineGames-title {
+  font-size: clamp(24px, 5vw, 36px);
+  align-self: start;
+}
+.PopularOnlineGames-intro .PopularOnlineGames-title span {
+  color: #f9e045;
+}
+.PopularOnlineGames-intro .PopularOnlineGames-description {
+  font-size: clamp(15px, 4.5vw, 24px);
+}
+.PopularOnlineGames-intro .PopularOnlineGames-description span {
+  color: #f9e045;
+}
+
+.cards-game {
+  color: white;
+}
+.cards-game .cards-game-intro .cards-game-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.cards-game .cards-game-intro .cards-game-title span {
+  color: #f9e045;
+}
+.cards-game .cards-game-intro .cards-game-img {
+  width: 100%;
+}
+.cards-game .cards-game-intro .cards-game-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.live-blackjack-block {
+  padding-top: 30px;
+}
+.live-blackjack-block .black-jack-intro {
+  padding-bottom: 25px;
+}
+.live-blackjack-block .black-jack-intro .live-blackjack-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.live-blackjack-block .black-jack-intro div {
+  display: flex;
+  justify-content: center;
+}
+.live-blackjack-block .black-jack-intro div img {
+  width: 70%;
+}
+.live-blackjack-block .live-blackjack-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 90%;
+}
+
+.baccarat-block .baccarat-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.baccarat-block .baccarat-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 90%;
+}
+
+.poker-block .poker-intro {
+  padding-bottom: 25px;
+}
+.poker-block .poker-intro .poker-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.poker-block .poker-intro div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.poker-block .poker-intro div img {
+  width: 70%;
+}
+.poker-block .poker-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 90%;
+}
+
+.teenpatti-block .teenpatti-intro {
+  padding-bottom: 25px;
+}
+.teenpatti-block .teenpatti-intro .teenpatti-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.teenpatti-block .teenpatti-intro div {
+  display: flex;
+  justify-content: center;
+}
+.teenpatti-block .teenpatti-intro div img {
+  width: 70%;
+}
+.teenpatti-block .teenpatti-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 90%;
+}
+
+.slots-game-block {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.slots-game-block .slots-game-intro .slots-game-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.slots-game-block .slots-game-intro .slots-game-intro-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div img {
+  border-radius: 20px;
+  width: 100%;
+}
+.slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div span {
+  color: black;
+  background-color: white;
+  width: 88%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: clamp(16px, 4vw, 24px);
+  font-weight: 700;
+}
+.slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div:hover span {
+  background-color: #f9e045;
+}
+.slots-game-block .slots-game-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 95%;
+  line-height: 115%;
+}
+
+.roulette-game .roulette-intro {
+  padding-bottom: 25px;
+}
+.roulette-game .roulette-intro .roulette-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.roulette-game .roulette-intro div {
+  display: flex;
+  justify-content: center;
+}
+.roulette-game .roulette-intro div img {
+  width: 70%;
+  border-radius: 15px;
+}
+.roulette-game .roulette-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 95%;
+}
+
+.virtual-sports-block {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.virtual-sports-block .virtual-sports-block-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.virtual-sports-block .virtual-sports-img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.virtual-sports-block .virtual-sports-img img {
+  width: 100%;
+}
+.virtual-sports-block .virtual-sports-description {
+  font-size: clamp(15px, 4vw, 24px);
+  opacity: 95%;
+}
+
+.bonuses-and-promotions {
+  width: 80%;
+  color: white;
+}
+.bonuses-and-promotions .bonuses-and-promotions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bonuses-and-promotions-intro .bonuses-title {
+  font-size: clamp(24px, 5vw, 36px);
+}
+.bonuses-and-promotions-intro .bonuses-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 95%;
+}
+
+.bonuses-and-promotions-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bonuses-and-promotions-content .bonuses-content-title {
+  font-size: clamp(20px, 4vw, 26px);
+  font-weight: 500;
+}
+.bonuses-and-promotions-content .bonuses-content-classifications .bonuses-list {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.bonuses-and-promotions-content .bonuses-content-classifications .bonuses-list li {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 90%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px 4px rgba(128, 0, 255, 0.6);
+}
+.bonuses-and-promotions-content .bonuses-content-classifications .bonuses-list li h3 {
+  margin-top: 0px;
+}
+
+.how-to-register {
+  width: 80%;
+  color: white;
+}
+.how-to-register .how-to-register-intro .how-to-register-title {
+  color: #f9e045;
+  font-size: clamp(24px, 5vw, 36px);
+}
+.how-to-register .how-to-register-intro .how-to-register-description {
+  font-size: clamp(15px, 4vw, 24px);
+  opacity: 95%;
+}
+.how-to-register .how-to-register-intro .how-to-register-description span {
+  font-weight: 500;
+}
+
+.how-to-register-content .how-to-register-pre-title {
+  padding-top: 50px;
+  font-size: clamp(18px, 5vw, 36px);
+  color: #f9e045;
+  font-weight: 500;
+}
+.how-to-register-content ul {
+  list-style: decimal;
+  padding-left: 15px;
+  font-size: clamp(15px, 4vw, 22px);
+}
+.how-to-register-content ul li {
+  opacity: 97%;
+}
+.how-to-register-content ul li::marker {
+  font-weight: 700;
+  color: #f9e045;
+  font-size: clamp(18px, 5vw, 24px);
+}
+.how-to-register-content ul h3 {
+  font-size: clamp(18px, 5vw, 24px);
+}
+.how-to-register-content ul ul {
+  padding-left: 10px;
+}
+.how-to-register-content ul ul li::marker {
+  content: "- ";
+  color: white;
+}
+
+.why-choose {
+  width: 80%;
+  color: white;
+}
+.why-choose .why-choose-intro .why-choose-title {
+  color: #f9e045;
+  font-size: clamp(24px, 5vw, 36px);
+}
+.why-choose .why-choose-intro .why-choose-description {
+  font-size: clamp(15px, 4vw, 24px);
+}
+.why-choose .why-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.why-choose .why-btn-container .why-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: clamp(18px, 4.5vw, 24px);
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #f9e045;
+  min-height: 55px;
+  border-radius: 10px;
+  color: #1a0740;
+  font-weight: 700;
+}
+.why-choose .why-btn-container .why-btn:hover {
+  color: #f9e045;
+  transition: 0.3s;
+  background-color: #1a0740;
+}
+
+.why-choose-content ul {
+  list-style: decimal;
+  padding-left: 0px;
+  list-style: none;
+}
+.why-choose-content ul li {
+  opacity: 95%;
+  background: linear-gradient(135deg, #4B0082, #2A0050);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+  margin-top: 30px;
+  font-size: clamp(15px, 4vw, 24px);
+}
+.why-choose-content ul li h3 {
+  font-size: clamp(24px, 5vw, 36px);
+  margin-top: 0px;
+  color: #f9e045;
+}
+.why-choose-content ul li::marker {
+  color: #f9e045;
+  font-weight: 700;
+  font-size: clamp(23px, 5vw, 35px);
+}
+
+.how-to-deposit {
+  width: 80%;
+  color: white;
+}
+.how-to-deposit .deposit-title {
+  font-size: clamp(24px, 5vw, 36px);
+  color: #f9e045;
+}
+.how-to-deposit .deposit-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 95%;
+}
+.how-to-deposit .deposit-description span {
+  font-weight: 500;
+}
+
+.how-to-withdraw {
+  width: 80%;
+  color: white;
+}
+.how-to-withdraw .how-to-withdraw-title {
+  font-size: clamp(24px, 5vw, 36px);
+  color: #f9e045;
+}
+.how-to-withdraw .how-to-withdraw-description {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 95%;
+}
+.how-to-withdraw .how-to-withdraw-description span {
+  font-weight: 500;
+}
+
+.legit-casino {
+  width: 80%;
+  color: white;
+}
+.legit-casino h2 {
+  font-size: clamp(24px, 5vw, 36px);
+  color: #f9e045;
+}
+.legit-casino .legit-casino-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.legit-casino .legit-casino-content div {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 95%;
+}
+.legit-casino .legit-casino-content div span {
+  font-weight: 500;
+}
+
+.faq {
+  color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 50px;
+}
+.faq h2 {
+  color: #f9e045;
+  font-size: clamp(24px, 5vw, 36px);
+}
+.faq .faq-question {
+  border-radius: 15px;
+  background-color: #1a0740;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: clamp(16px, 4vw, 24px);
+}
+.faq .faq-question .title-question-plus {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  gap: 20px;
+}
+.faq .faq-question .title-question-plus h3 {
+  padding-left: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.faq .faq-question .title-question-plus .anim-krest {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: 0.3s;
+}
+.faq .faq-question .title-question-plus .anim-krest img {
+  width: 24px;
+  height: 28px;
+}
+.faq .faq-question .title-question-plus .anim-krest.active {
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+.faq .faq-question .question-text {
+  padding-bottom: 20px;
+  border-top: solid #f9e045 1px;
+  border-radius: 0px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  display: none;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.faq .faq-question .question-text.active {
+  display: block;
+  transition: 0.3s;
+}
+
+.privacy-section {
+  width: 80%;
+  color: white;
+  display: block;
+  padding-bottom: 50px;
+}
+.privacy-section .privacy-container .privacy-intro {
+  padding-bottom: 20px;
+}
+.privacy-section .privacy-container .privacy-intro h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  color: #f9e045;
+}
+.privacy-section .privacy-container .privacy-intro div {
+  opacity: 95%;
+  font-size: clamp(16px, 4vw, 24px);
+}
+
+.privacy-content ul {
+  list-style: decimal;
+  padding-left: 15px;
+}
+.privacy-content ul li::marker {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 500;
+  color: #f9e045;
+}
+.privacy-content ul li h2 {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.privacy-content ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.privacy-content ul li div .collect-desk {
+  color: white;
+  opacity: 95%;
+  margin-top: 10px;
+}
+.privacy-content ul li div h4 {
+  font-weight: 500;
+  color: #f9e045;
+  margin-bottom: 0px;
+  margin-top: 25px;
+  font-size: clamp(18px, 4.5vw, 32px);
+}
+.privacy-content ul li div div {
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 98%;
+}
+
+.out-block {
+  margin-top: 25px;
+}
+
+.terms-section {
+  width: 80%;
+  color: white;
+  padding-bottom: 50px;
+  display: block;
+}
+.terms-section .terms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.terms-section .terms-container .terms-intro h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  color: #f9e045;
+}
+.terms-section .terms-container .terms-intro div {
+  opacity: 99%;
+  font-size: clamp(16px, 4vw, 24px);
+}
+
+.terms-list {
+  list-style: decimal;
+  margin-top: 0px;
+  padding-left: 35px;
+}
+.terms-list li::marker {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 500;
+  color: #f9e045;
+}
+.terms-list li h2 {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 500;
+}
+.terms-list li div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: clamp(16px, 4vw, 24px);
+  opacity: 98%;
+}
+.terms-list li div h4 {
+  font-weight: 500;
+  color: #f9e045;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: clamp(18px, 4.5vw, 32px);
+  padding-bottom: 10px;
+}
+
+.scroll-btn {
+  position: fixed;
+  z-index: 1000;
+  top: 90%;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #f9e045;
+  min-height: 50px;
+  border-radius: 15px;
+  color: #1a0740;
+  display: none;
+}
+.scroll-btn div {
+  transform: rotate(-90deg);
+  height: 34px;
+  width: 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/public/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg);
+  transition: 0.3s;
+}
+.scroll-btn:hover {
+  color: #f9e045;
+  transition: 0.3s;
+  background-color: #1a0740;
+}
+.scroll-btn:hover div {
+  background-image: url(/public/yellow-arrow.svg);
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 1020px) {
+  .home-screen .home-screen-container {
+    justify-content: start;
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+  .home-screen .home-screen-container .home-screen-content {
+    width: 70%;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .PopularOnlineGames-intro-img {
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .PopularOnlineGames-intro-img img {
+    width: 70%;
+    cursor: pointer;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .cards-game .cards-game-intro .cards-game-img {
+    display: flex;
+    justify-content: center;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .cards-game .cards-game-intro .cards-game-img img {
+    width: 70%;
+    border-radius: 15px;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .slots-game-block .slots-game-intro .slots-game-intro-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div img {
+    border-radius: 20px;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div span {
+    color: black;
+    background-color: white;
+    width: 90%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(16px, 4vw, 24px);
+    font-weight: 700;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .slots-game-block .slots-game-intro .slots-game-intro-img .slots-mini-block div:hover span {
+    background-color: #f9e045;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .virtual-sports-block .virtual-sports-img {
+    display: flex;
+    justify-content: center;
+  }
+  .PopularOnlineGames .PopularOnlineGames-container .virtual-sports-block .virtual-sports-img img {
+    width: 70%;
+  }
+  .why-choose .why-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .why-choose .why-btn-container .why-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: clamp(15px, 5vw, 24px);
+    transition: 0.3s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    background-color: #f9e045;
+    min-height: 55px;
+    border-radius: 10px;
+    color: #1a0740;
+    font-weight: 700;
+  }
+  .why-choose .why-btn-container .why-btn:hover {
+    color: #f9e045;
+    transition: 0.3s;
+    background-color: #1a0740;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .home-screen .home-screen-container {
+    justify-content: start;
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+  .home-screen .home-screen-container .home-screen-content {
+    width: 50%;
+  }
+  .home-screen .home-screen-container .home-screen-content h1 {
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=scss.css.map */

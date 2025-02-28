@@ -1,0 +1,1049 @@
+@use './varaibles' as *;
+@use './footerheader' as *;
+@use './adapt768px' as *;
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inter Tight", serif;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-187deg, #4b0082, #800080, #9400d3);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    all: unset;
+}
+
+img {
+    display: block;
+}
+
+.color-set-name-casino {
+    color: $use-yellow;
+}
+
+.wrapper {
+    width: 1200px;
+}
+
+.home-screen {
+    width: 100%;
+    background-image: url(/public/live-casino.7d5721f8_11zon.webp);
+    min-height: 635px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 0px;
+
+    .home-screen-container {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        min-height: inherit;
+        background-color: rgba(0, 0, 0, 0.36);
+
+        .home-screen-content {
+            color: white;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .home-screen-title {
+                font-size: clamp(36px, 5vw, 46px);
+
+                span {
+                    color: $use-yellow;
+                }
+            }
+
+            .home-screen-description {
+                font-size: clamp(16px, 5vw, 26px);
+                font-weight: 600;
+            }
+
+            .home-screen-btn {
+                align-self: start;
+                margin-top: 25px;
+                cursor: pointer;
+                font-size: clamp(15px, 5vw, 24px);
+                transition: 0.3s;
+                user-select: none;
+                background-color: $use-yellow;
+                padding: 10px;
+                border-radius: 10px;
+                color: $use-black-phioph;
+                font-weight: 500;
+
+                &:hover {
+                    color: $use-yellow;
+                    transition: 0.3s;
+                    background-color: $use-black-phioph;
+                }
+            }
+        }
+    }
+}
+
+.wrapper-sections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: $use-back-col;
+    gap: 70px;
+}
+
+.AboutN8CasinoPlatform {
+    width: 80%;
+    background-color: $use-back-col;
+}
+
+.AboutN8CasinoPlatform-container {
+    .about-title {
+        color: $use-yellow;
+        font-size: clamp(24px, 5vw, 36px);
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+        opacity: 95%;
+
+        div {
+            font-size: clamp(16px, 5vw, 24px);
+        }
+
+        span {
+            color: $use-yellow;
+        }
+    }
+}
+
+.PopularOnlineGames {
+    width: 80%;
+
+    .PopularOnlineGames-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.PopularOnlineGames-intro {
+    color: white;
+    opacity: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .PopularOnlineGames-intro-img {
+        padding-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .PopularOnlineGames-title {
+        font-size: clamp(24px, 5vw, 36px);
+        align-self: start;
+
+        span {
+            color: $use-yellow;
+        }
+    }
+
+    .PopularOnlineGames-description {
+        font-size: clamp(15px, 4.5vw, 24px);
+
+        span {
+            color: $use-yellow;
+        }
+    }
+}
+
+.cards-game {
+    color: white;
+
+    .cards-game-intro {
+        .cards-game-title {
+            font-size: clamp(24px, 5vw, 36px);
+
+            span {
+                color: $use-yellow;
+            }
+        }
+
+        .cards-game-img {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+.live-blackjack-block {
+    padding-top: 30px;
+
+    .black-jack-intro {
+        padding-bottom: 25px;
+
+        .live-blackjack-title {
+            font-size: clamp(24px, 5vw, 36px);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    .live-blackjack-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 90%;
+    }
+}
+
+.baccarat-block {
+    .baccarat-title {
+        font-size: clamp(24px, 5vw, 36px);
+    }
+
+    .baccarat-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 90%;
+    }
+}
+
+.poker-block {
+    .poker-intro {
+        padding-bottom: 25px;
+
+        .poker-title {
+            font-size: clamp(24px, 5vw, 36px);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    .poker-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 90%;
+    }
+}
+
+.teenpatti-block {
+    .teenpatti-intro {
+        padding-bottom: 25px;
+
+        .teenpatti-title {
+            font-size: clamp(24px, 5vw, 36px);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    .teenpatti-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 90%;
+    }
+}
+
+.slots-game-block {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .slots-game-intro {
+        .slots-game-title {
+            font-size: clamp(24px, 5vw, 36px);
+        }
+
+        .slots-game-intro-img {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            .slots-mini-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                width: 100%;
+
+                div {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        border-radius: 20px;
+                        width: 100%;
+                    }
+
+                    span {
+                        color: black;
+                        background-color: white;
+                        width: 88%;
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        font-size: clamp(16px, 4vw, 24px);
+                        font-weight: 700;
+                    }
+
+                    &:hover {
+                        span {
+                            background-color: $use-yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slots-game-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 95%;
+        line-height: 115%;
+    }
+}
+
+.roulette-game {
+    .roulette-intro {
+        padding-bottom: 25px;
+
+        .roulette-title {
+            font-size: clamp(24px, 5vw, 36px);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 70%;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .roulette-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 95%;
+    }
+}
+
+.virtual-sports-block {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    .virtual-sports-block-title {
+        font-size: clamp(24px, 5vw, 36px);
+    }
+
+    .virtual-sports-img {
+        width: 100%;
+        padding-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .virtual-sports-description {
+        font-size: clamp(15px, 4vw, 24px);
+        opacity: 95%;
+    }
+}
+
+.bonuses-and-promotions {
+    width: 80%;
+    color: white;
+
+    .bonuses-and-promotions-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.bonuses-and-promotions-intro {
+    .bonuses-title {
+        font-size: clamp(24px, 5vw, 36px);
+    }
+
+    .bonuses-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 95%;
+    }
+}
+
+.bonuses-and-promotions-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .bonuses-content-title {
+        font-size: clamp(20px, 4vw, 26px);
+        font-weight: 500;
+    }
+
+    .bonuses-content-classifications {
+        .bonuses-list {
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            list-style: none;
+
+            li {
+                font-size: clamp(16px, 4vw, 24px);
+                opacity: 90%;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px 4px rgba(128, 0, 255, 0.6);
+
+                h3 {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
+
+.how-to-register {
+    width: 80%;
+    color: white;
+
+    .how-to-register-intro {
+        .how-to-register-title {
+            color: $use-yellow;
+            font-size: clamp(24px, 5vw, 36px);
+        }
+
+        .how-to-register-description {
+            font-size: clamp(15px, 4vw, 24px);
+            opacity: 95%;
+
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.how-to-register-content {
+    .how-to-register-pre-title {
+        padding-top: 50px;
+        font-size: clamp(18px, 5vw, 36px);
+        color: $use-yellow;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: decimal;
+        padding-left: 15px;
+        font-size: clamp(15px, 4vw, 22px);
+
+        li {
+            opacity: 97%;
+        }
+
+        li::marker {
+            font-weight: 700;
+            color: $use-yellow;
+            font-size: clamp(18px, 5vw, 24px)
+        }
+
+        h3 {
+            font-size: clamp(18px, 5vw, 24px)
+        }
+
+        ul {
+            padding-left: 10px;
+
+            li::marker {
+                content: '- ';
+                color: white;
+            }
+        }
+    }
+}
+
+.why-choose {
+    width: 80%;
+    color: white;
+
+    .why-choose-intro {
+        .why-choose-title {
+            color: $use-yellow;
+            font-size: clamp(24px, 5vw, 36px);
+        }
+
+        .why-choose-description {
+            font-size: clamp(15px, 4vw, 24px);
+        }
+    }
+
+    .why-btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .why-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: clamp(18px, 4.5vw, 24px);
+            transition: 0.3s;
+            user-select: none;
+            background-color: $use-yellow;
+            min-height: 55px;
+            border-radius: 10px;
+            color: $use-black-phioph;
+            font-weight: 700;
+
+            &:hover {
+                color: $use-yellow;
+                transition: 0.3s;
+                background-color: $use-black-phioph;
+            }
+        }
+    }
+}
+
+.why-choose-content {
+    ul {
+        list-style: decimal;
+        padding-left: 0px;
+        list-style: none;
+
+        li {
+            opacity: 95%;
+            background: linear-gradient(135deg, #4B0082, #2A0050);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+            margin-top: 30px;
+            font-size: clamp(15px, 4vw, 24px);
+
+            h3 {
+                font-size: clamp(24px, 5vw, 36px);
+                margin-top: 0px;
+                color: $use-yellow;
+            }
+
+            &::marker {
+                color: $use-yellow;
+                font-weight: 700;
+                font-size: clamp(23px, 5vw, 35px);
+            }
+        }
+    }
+}
+
+.how-to-deposit {
+    width: 80%;
+    color: white;
+
+    .deposit-title {
+        font-size: clamp(24px, 5vw, 36px);
+        color: $use-yellow;
+    }
+
+    .deposit-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 95%;
+
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+.how-to-withdraw {
+    width: 80%;
+    color: white;
+
+    .how-to-withdraw-title {
+        font-size: clamp(24px, 5vw, 36px);
+        color: $use-yellow;
+    }
+
+    .how-to-withdraw-description {
+        font-size: clamp(16px, 4vw, 24px);
+        opacity: 95%;
+
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+.legit-casino {
+    width: 80%;
+    color: white;
+
+    h2 {
+        font-size: clamp(24px, 5vw, 36px);
+        color: $use-yellow;
+    }
+
+    .legit-casino-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        div {
+            font-size: clamp(16px, 4vw, 24px);
+            opacity: 95%;
+
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.faq {
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 50px;
+
+    h2 {
+        color: $use-yellow;
+        font-size: clamp(24px, 5vw, 36px);
+    }
+
+    .faq-question {
+        border-radius: 15px;
+        background-color: $use-black-phioph;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        cursor: pointer;
+        font-size: clamp(16px, 4vw, 24px);
+
+        .title-question-plus {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 10px;
+            gap: 20px;
+
+            h3 {
+                padding-left: 15px;
+                user-select: none;
+            }
+
+            .anim-krest {
+                user-select: none;
+
+                img {
+                    width: 24px;
+                    height: 28px;
+                }
+
+                transition: 0.3s;
+            }
+
+            .anim-krest.active {
+                transform: rotate(45deg);
+                transition: 0.3s;
+            }
+        }
+
+        .question-text {
+            padding-bottom: 20px;
+            border-top: solid $use-yellow 1px;
+            border-radius: 0px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-right: 15px;
+            display: none;
+            transition: 0.3s;
+            user-select: none;
+        }
+
+        .question-text.active {
+            display: block;
+            transition: 0.3s;
+        }
+    }
+}
+
+.privacy-section {
+    width: 80%;
+    color: white;
+    display: block;
+    padding-bottom: 50px;
+
+    .privacy-container {
+        .privacy-intro {
+            padding-bottom: 20px;
+
+            h1 {
+                font-size: clamp(28px, 5vw, 40px);
+                color: $use-yellow;
+            }
+
+            div {
+                opacity: 95%;
+                font-size: clamp(16px, 4vw, 24px);
+            }
+        }
+    }
+}
+
+.privacy-content {
+    ul {
+        list-style: decimal;
+        padding-left: 15px;
+
+        li::marker {
+            font-size: clamp(24px, 5vw, 36px);
+            font-weight: 500;
+            color: $use-yellow;
+        }
+
+        li {
+
+            h2 {
+                font-size: clamp(24px, 5vw, 36px);
+                font-weight: 500;
+                margin-bottom: 0px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .collect-desk {
+                    color: white;
+                    opacity: 95%;
+                    margin-top: 10px;
+                }
+
+                h4 {
+                    font-weight: 500;
+                    color: $use-yellow;
+                    margin-bottom: 0px;
+                    margin-top: 25px;
+                    font-size: clamp(18px, 4.5vw, 32px);
+                }
+
+                div {
+                    font-size: clamp(16px, 4vw, 24px);
+                    opacity: 98%;
+                }
+            }
+        }
+    }
+}
+
+.out-block {
+    margin-top: 25px;
+}
+
+.terms-section {
+    width: 80%;
+    color: white;
+    padding-bottom: 50px;
+    display: block;
+
+    .terms-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .terms-intro {
+            h1 {
+                font-size: clamp(28px, 5vw, 40px);
+                color: $use-yellow;
+            }
+
+            div {
+                opacity: 99%;
+                font-size: clamp(16px, 4vw, 24px);
+            }
+        }
+    }
+}
+
+.terms-list {
+    list-style: decimal;
+    margin-top: 0px;
+    padding-left: 35px;
+
+    li::marker {
+        font-size: clamp(24px, 5vw, 36px);
+        font-weight: 500;
+        color: $use-yellow;
+    }
+
+    li {
+        h2 {
+            font-size: clamp(24px, 5vw, 36px);
+            font-weight: 500;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: clamp(16px, 4vw, 24px);
+            opacity: 98%;
+
+            h4 {
+                font-weight: 500;
+                color: $use-yellow;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                font-size: clamp(18px, 4.5vw, 32px);
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+.scroll-btn {
+    position: fixed;
+    z-index: 1000;
+    top: 90%;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+    background-color: $use-yellow;
+    min-height: 50px;
+    border-radius: 15px;
+    color: $use-black-phioph;
+    display: none;
+
+    div {
+        transform: rotate(-90deg);
+        height: 34px;
+        width: 34px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(/public/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: $use-yellow;
+        transition: 0.3s;
+        background-color: $use-black-phioph;
+        div {
+            background-image: url(/public/yellow-arrow.svg);
+            transition: 0.3s;
+        }
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .home-screen {
+        .home-screen-container {
+            justify-content: start;
+            padding-top: 50px;
+            padding-left: 80px;
+
+            .home-screen-content {
+                width: 70%;
+            }
+        }
+    }
+
+    .PopularOnlineGames {
+        .PopularOnlineGames-container {
+            .PopularOnlineGames-intro-img {
+                padding-bottom: 30px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 70%;
+                    cursor: pointer;
+                }
+            }
+
+            .cards-game {
+                .cards-game-intro {
+                    .cards-game-img {
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            width: 70%;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+
+            .slots-game-block {
+                .slots-game-intro {
+                    .slots-game-intro-img {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        .slots-mini-block {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 15px;
+
+                            div {
+                                cursor: pointer;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                img {
+                                    border-radius: 20px;
+                                }
+
+                                span {
+                                    color: black;
+                                    background-color: white;
+                                    width: 90%;
+                                    border-bottom-right-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                    display: flex;
+                                    justify-content: center;
+                                    font-size: clamp(16px, 4vw, 24px);
+                                    font-weight: 700;
+                                }
+
+                                &:hover {
+                                    span {
+                                        background-color: $use-yellow;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .virtual-sports-block {
+                .virtual-sports-img {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    .why-choose {
+
+        .why-btn-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .why-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                margin-top: 25px;
+                cursor: pointer;
+                font-size: clamp(15px, 5vw, 24px);
+                transition: 0.3s;
+                user-select: none;
+                background-color: $use-yellow;
+                min-height: 55px;
+                border-radius: 10px;
+                color: $use-black-phioph;
+                font-weight: 700;
+
+                &:hover {
+                    color: $use-yellow;
+                    transition: 0.3s;
+                    background-color: $use-black-phioph;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .home-screen {
+        .home-screen-container {
+            justify-content: start;
+            padding-top: 50px;
+            padding-left: 80px;
+
+            .home-screen-content {
+                width: 50%;
+                h1 {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
